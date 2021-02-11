@@ -8,7 +8,7 @@ permalink: "signatures/{{ item.name | slug | url  }}.html"
 tags: dreams
 layout: default
 ---
-      <title>Richclicks Email Signature</title>
+      <title>{{ item.name }} - Richclicks Email Signature</title>
       <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
       <style>
          @import url(http://fonts.googleapis.com/css?family=Roboto);
@@ -22,23 +22,17 @@ layout: default
                <td style="vertical-align: middle;">
                   <span style="font-family: Roboto, sans-serif; color:#000; font-size:12pt;font-weight: 700;line-height: 1;letter-spacing: 0.5; text-transform: uppercase;">{{ item.name }}<br></span>
                   <span style="font-family: Roboto, sans-serif; color:#000; font-size:11pt;font-weight: 500;line-height: 1.5;letter-spacing: 0.5;"> &lt; {{ item.role }} &gt; </span><br>
+                  
                   <span style="font-family: Roboto, sans-serif; color:#000; font-size:9pt;">UK <a style="text-decoration: none; color:#000;" href="tel:0044{{ item.engtel }}">+44 {{ item.engtel }}</a> 
                   <br>Italy <a style="text-decoration: none; color:#000;" href="tel:0039{{ item.itatel }}">+39 {{ item.itatel }}</a> 
                   {% if item.skype %}
                     <br>Skype <a style="text-decoration: none; color:#000;" href="skype:{{ item.skype }}?call">{{ item.skypename }}</a></span>
                   {% endif %}
+                  <a style="padding-top:5px; padding-bottom:5px; clear:both; display:block;" href="https://www.richclicks.co.uk/?utm_source=email&utm_medium=firma"><img style="margin-left:0px; margin-right:20px; width:120px; height:auto;" src="https://bucket.richclicks.co.uk/firme/richclicks-logo-blu-ara.png" alt="RichClicks"></a>
                </td>
-               <td rowspan="5"><a style="width:100px; height:auto;" href="https://digital-marketing-europe.martechoutlook.com/vendors/top-digital-marketing-consulting-services-companies-in-europe.html" target="_blank"><img style="width:160px; height:auto;" src="https://bucket.richclicks.co.uk/firme/martech.png" alt="RichClicks Top European Digital Marketing"></a></td>
+               
             </tr>
-            <tr>
-               <td style="padding-top: 10px; padding-bottom: 20px;"><a href="https://www.facebook.com/richclicks/"><img style="width:20px; height:auto;" src="https://bucket.richclicks.co.uk/firme/f.png"></a></td>
-               <td style="padding-top: 10px; padding-bottom: 20px;"><a href="https://www.youtube.com/channel/UCab_3vf7ek38UXT_Z_tew3w"><img style="width:20px; height:auto;" src="https://bucket.richclicks.co.uk/firme/y.png" ></a></td>
-               <td style="padding-top: 10px; padding-bottom: 20px;"><a href="https://twitter.com/richclicks"><img style="width:20px; height:auto;" src="https://bucket.richclicks.co.uk/firme/t.png"></a></td>
-               <td style="padding-top: 10px; padding-bottom: 20px;"><a href="https://www.instagram.com/richclicksltd/"><img style="width:20px; height:auto;" src="https://bucket.richclicks.co.uk/firme/i.png"></a></td>
-               <td style="padding-top: 10px; padding-bottom: 20px;"><a href="https://www.linkedin.com/company/rich-clicks-ltd"><img style="width:20px; height:auto;" src="https://bucket.richclicks.co.uk/firme/l.png"></a></td>
-               <td style="padding-top: 0px; padding-bottom: 20px;"><a href="https://www.richclicks.co.uk/?utm_source=email&utm_medium=firma"><img style="margin-left:20px; margin-right:20px; width:120px; height:auto;" src="https://bucket.richclicks.co.uk/firme/richclicks-logo-blu-ara.png" alt="RichClicks logo"></a></td>
-               </td>
-            </tr>
+         
          </tbody>
       </table>
    </body>
