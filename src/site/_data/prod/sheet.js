@@ -4,7 +4,7 @@ const seed   = require('../../../utils/save-seed.js');
 // src/_data/all.js
 require('dotenv').config();
 const Airtable = require('airtable');
-let base = new Airtable({ apiKey: process.env.KEY }).base('appnvJNwJP8gkEES7');
+let base = new Airtable({ apiKey: process.env.KEY }).base('appng2QRi7OltoW2Q');
 
 module.exports = () => {
   return new Promise((resolve, reject) => {

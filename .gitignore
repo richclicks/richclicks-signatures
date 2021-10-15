@@ -7,7 +7,7 @@
 /src/site/_data/dev/*.json
 
 # secrets and errors
-#.env
+.env
 /yarn-error.log
 
 # macOS related files
