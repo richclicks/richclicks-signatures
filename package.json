@@ -1,8 +1,8 @@
 {
-  "name": "eleventy-example-google-sheets-data",
+  "name": "eleventy-example-airtable-data",
   "version": "0.0.1",
-  "description": "An example of sourcing data from Google Sheets for use in Eleventy at build time",
-  "author": "Phil Hawksworth",
+  "description": "An example of sourcing data from Airtable for use in Eleventy at build time",
+  "author": "RichClicks",
   "license": "MIT",
   "scripts": {
     "start": "npm run dev",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/example-read-from-sheets"
+    "url": "https://github.com/richclicks/richclicks-signatures"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
