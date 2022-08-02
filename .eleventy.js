@@ -8,7 +8,7 @@ module.exports = function(config) {
   config.addLayoutAlias('default', 'layouts/base.njk');
 
   // minify the html output
-  config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
+  // config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
 
   // use a filter for simple css minification
   config.addFilter("cssmin", require("./src/utils/minify-css.js"))

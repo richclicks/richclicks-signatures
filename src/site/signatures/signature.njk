@@ -7,10 +7,14 @@ pagination:
 permalink: "signatures/{{ item.name | slug | url  }}.html"
 tags: dreams
 layout: default
+
 ---
-      <title>{{ item.name }} - Richclicks Email Signature</title>
-      <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-      <style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
          @import url(http://fonts.googleapis.com/css?family=Roboto);
          table:hover{
             border: solid 1px #ff6700;
@@ -19,8 +23,17 @@ layout: default
             -moz-box-shadow: 0px 1px 20px 2px rgba(0,0,0,0.46);
          }
       </style>
-   </head>
-   <body>
+    {% set css %}
+      {# include "css/main.css" #}
+    {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+    <title>{{ item.name }} - Richclicks Email Signature</title>
+  </head>
+  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+    <div class="container">
+      {# include "header.njk" #}
       <table style="width: auto; min-width: 360px; max-width: 460px; padding: 20px; border: solid 1px #e1e1e1; border-radius: 15px; background-color: #fffefc;">
          <tbody>
             <tr>
@@ -36,11 +49,11 @@ layout: default
                   {% endif %}
                   {# <br><br><span style="font-family: Roboto, sans-serif; color:#000; font-size:12pt;font-weight: 700;line-height: 1;letter-spacing: 0.5; ">richclic<span style="text-decoration: none;  color:#FF6700;">k</span>s</span> #}
                   {# <br><img style="margin-left:0px; margin-right:20px; width:120px; height:auto;" src="https://bucket.richclicks.co.uk/firme/richclicks-logo-blu-ara.png" alt="RichClicks"> #}
-               </td>
-               
-            </tr>
-         
+               </td>               
+            </tr>         
          </tbody>
       </table>
-   </body>
+      
+    </div>
+  </body>
 </html>
